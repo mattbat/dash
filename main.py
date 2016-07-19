@@ -17,7 +17,6 @@ def ziplock_button_pressed():
   print 'Ziplock Dash button pressed at ' + current_time
   global ifttt_key
   url = ziplock_url + ifttt_key
-  print url
   post_response = requests.post(url=url)
   
 def orbit_button_pressed():
@@ -25,7 +24,6 @@ def orbit_button_pressed():
   print 'Oribt Dash button pressed at ' + current_time
   global ifttt_key
   url = orbit_url + ifttt_key
-  print url
   post_response = requests.post(url=url)
 
 def udp_filter(pkt):
@@ -53,8 +51,6 @@ def main():
     section = "UserConfig"
     global ifttt_key
     ifttt_key = Config.get(section, 'ifttt_key')
-    
-    print ifttt_key
 
 
 main()
