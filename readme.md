@@ -20,20 +20,19 @@ Setting Up Your Dash
 ---
 Follow the instructions from Amazon on how to pair the Dash **but when it asks you to choose a product, do NOT choose a product to order.**
 
-(On iOS) Turn off dash button notifications in the Amazon app to avoid getting spammed with Amazon notificaions each time the button is pressed.
-1. Open Amazon App
-2. Select `Your Account` from the menu
-3. Select `Manage Devices` under the `Dash Devices` heading
-4. Select `Notification Settings`
-5. Slide the `Dash Button Updates` switch to OFF
+(On iOS) Turn off dash button notifications in the Amazon app to avoid getting spammed with Amazon notificaions each time the button is pressed.  
+    1. Open Amazon App  
+    2. Select `Your Account` from the menu  
+    3. Select `Manage Devices` under the `Dash Devices` heading  
+    4. Select `Notification Settings`  
+    5. Slide the `Dash Button Updates` switch to OFF  
 
 
 Detecting Button Presses
 ---
-1. Install dependencies
-    A. _scapy_ This varies by platform, so do a Google search, or start on [this page](http://www.secdev.org/projects/scapy/doc/installation.html/ "Installing scapy").
-    B. _tcpdump_  This varies by platform, so do a Google search.  For raspberry pi, `sudo apt-get install tcpdump`
-
+1. Install dependencies  
+    A. _scapy_ This varies by platform, so do a Google search, or start on [this page](http://www.secdev.org/projects/scapy/doc/installation.html/ "Installing scapy").  
+    B. _tcpdump_  This varies by platform, so do a Google search.  For raspberry pi, `sudo apt-get install tcpdump`  
 2. Install the other python requriements by running `pip install -r requriements.txt`
 3. Find out the ethernet MAC address of your Dash by looking at your Wifi router's logs after pressing the Dash's button.  The ethernet MAC address will be a number that looks something like _74:c2:46:4a:52:af_.
 4. Edit test.py to modify the MAC address in the _mac_to_action_ dictionary (on line 21) to be the MAC address of your Dash button.  It **must** be lowercase.
