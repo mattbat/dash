@@ -20,7 +20,13 @@ Setting Up Your Dash
 ---
 Follow the instructions from Amazon on how to pair the Dash **but when it asks you to choose a product, do NOT choose a product to order.**
 
-(On iOS) I was getting spammed by Amazon that my Dash wasn't completely set up whenever I pushed the Dash button, so an onfortunate side effect of this hack is that I had to turn off iOS notifications for the Amazon app to prevent getting spammed _every single time the button was pressed_.  (Amazon - it'd be great if you allowed hackers to turn that off in some preference...)
+(On iOS) Turn off dash button notifications in the Amazon app to avoid getting spammed with Amazon notificaions each time the button is pressed.
+1. Open Amazon App
+2. Select `Your Account` from the menu
+3. Select `Manage Devices` under the `Dash Devices` heading
+4. Select `Notification Settings`
+5. Slide the `Dash Button Updates` switch to OFF
+
 
 Detecting Button Presses
 ---
